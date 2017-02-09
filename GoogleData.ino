@@ -114,7 +114,7 @@ void loop()
     Console.println("Getting sensor value...");
 
     // get the value we want to append to our spreadsheet
-    unsigned long sensorValue=random(400,450);
+    unsigned long sensorValue=random(100,150);
     //unsigned long sensorValue = getSensorValue();
 
     Console.println("Appending value to spreadsheet...");
@@ -150,7 +150,7 @@ void loop()
     AppendValuesChoreo.addInput("SpreadsheetID", SPREADSHEET_ID);
 
     // convert the time and sensor values to a comma separated string
-    String myName="MaryL";
+    String myName="UnaLE";
     String rowData = "[[\"" + String(now) + "\", \"" + String(sensorValue) + "\", \"" + String(myName) + "\"]]";
 
     // add the RowData input item
